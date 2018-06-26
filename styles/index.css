@@ -1,0 +1,119 @@
+@font-face {
+	font-family: Ubuntu-Regular;
+	src: url('../assets/fonts/Ubuntu-Regular.ttf');
+}
+
+html, body, h1, h2, h4, ul, p {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	align-content: center;
+	min-height: 100vh;
+	background: #263238;
+}
+
+ul {
+	font-size: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	font-family: Ubuntu-Regular, sans-serif;
+}
+
+.personal {
+	padding: 30px;
+	min-width: 960px;
+}
+
+.info {
+	display: flex;
+	margin: 0 0 24px;
+}
+
+.info-visual {
+	margin: 0 80px 0 0;
+}
+
+.info__image {
+	max-width: 156px;
+	max-height: 156px;
+	border-radius: 6px
+}
+
+.info__title {
+	font-size: 56px;
+	font-weight: 300;
+	color: #ffffff;
+	margin: 12px 0 0;
+}
+
+.info__desc {
+	font-size: 36px;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+.contacts {
+	display: flex;
+}
+
+.contacts__item {
+	width: calc(100% / 5 - 9px);
+	margin: 0 12px 0 0;
+}
+
+.contacts__item:last-child {
+	margin: 0;
+}
+
+.contacts__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 40px;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: normal;
+	text-decoration: none;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+}
+
+.contacts__link:hover {
+	background: #37474f;
+}
+
+@media screen and (max-device-width: 768px) {
+	.personal {
+		min-width: 300px;
+	}
+
+	.info {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.info-visual {
+		margin: 0;
+	}
+
+	.contacts {
+		flex-direction: column;
+	}
+
+	.contacts__item {
+		width: 100%;
+		margin: 0 0 12px;
+	}
+}
